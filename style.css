@@ -51,13 +51,33 @@ nav {
 }
 
 nav a {
-  color: rgb(247, 211, 211);
+  color: rgb(251, 174, 174);
   text-decoration: none;
 }
 
 nav a:not(.active):hover {
   color: white;
+  transition: all 0.5s linear;
 }
 a.active {
   color: red;
+  transition: all 0.5s linear; /*Šobrīd šeit nav nozīmes*/
 }
+
+footer {
+  background-color: rgb(103, 55, 28);
+  color: white;
+  padding: 30px 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.left-footer, .right-footer {
+  width: 50%;
+}
+.googleMaps{
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
