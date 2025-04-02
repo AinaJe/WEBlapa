@@ -85,3 +85,17 @@ footer {
   width: 30px;
   border: none;
 }
+
+.table {
+  border: 1px solid black;
+  margin: 20px auto;
+  border-collapse:collapse;
+}
+.table tr, .table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.table tr:nth-child(2n){
+  background-color: rgb(212, 244, 212);
+}
