@@ -38,13 +38,13 @@
     </div>
     <div>
       <h2>Špikeris "CSS īpašības"</h2>
-      <div>
-        <table class="table">
+      <div class="content">
+        <table class="table2">
           <tr>
-            <th>Īpašība</th>
-            <th>Apraksts</th>
-            <th>Vērtība</th>
-            <th>Atlasītājs / elements</th>
+            <th class="th1">Īpašība</th>
+            <th class="th1">Apraksts</th>
+            <th class="th1">Vērtība</th>
+            <th class="th1">Atlasītājs / elements</th>
           </tr>
           <tr>
             <td><code>background-color</code></td>
@@ -143,7 +143,7 @@
             <td><code>small-caps</code></td>
           </tr>
           <tr>
-            <td colspan="4"><img  class="picture2" src="https://assets.codepen.io/13326161/html_21.png" alt="" /></td>
+            <td colspan="4"><img  class="picture" src="https://assets.codepen.io/13326161/html_21.png" alt="" /></td>
           </tr>
           <tr>
             <td><code>border</code></td>
@@ -206,75 +206,39 @@
     <footer>
         <div class="left_footer">
             <address>
-                <h3>Mūsu adrese:</h3>
+                <h3>Kontaktinformācija</h3>
                 <dl>
                     <dt>Adrese:</dt>
-                    <dd>aaaaaaaa</dd>
+                    <dd>Lielā iela 90 - 7<br>Talsi<br>Talsu novads<br>Latvija<br>LV-3201</dd>
                     <dt>Tālrunis:</dt>
                     <dd><a href="tel:+37112345678">12345678</a></dd>
                     <dt>Epasts:</dt>
-                    <dd><a href="mailto:info@xxx.lv">info@xxx.lv</a></dd>
+                    <dd><a href="mailto:info@test.lv">info@test.lv</a></dd>
                 </dl>
             </address>
             <form action="">
-                <label for="username">Jūsu vārds:</label>
-                <input type="text" name="username" id="username" required size="20" maxlength="20" minlength="3">
-
-                <input type="password" name="password" id="password" placeholder="Jūsu parole" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
-                <input type="email" name="email" id="password">
-                <input type="hidden" name="id" value="123">
-
-                <div>
-                    <div class="group">
-                        <input type="radio" name="skaitli" id="inp1" value="viens">
-                        <label for="inp1">Skaitlis 1</label>
-                    </div>    
-                    <div class="group">
-                        <input type="radio" name="skaitli" id="inp2" value="divi">
-                        <label for="inp2">Skaitlis 2</label>
-                    </div>
-                    <div class="group">
-                        <input type="radio" name="skaitli" id="inp3" value="trīs">
-                        <label for="inp3">Skaitlis 3</label>
-                    </div>
+                <h3>Sazināties ar mums</h3>
+                <div class="form-element">
+                    <label for="vards">Jūsu vārds:</label>
+                    <input type="text" name="vards" id="vards">
                 </div>
-                <div>
-                    <input type="checkbox" name="agree" id="agree" value="true">
-                    <label for="agree">Piekrītu lietošanas noteikumiem</label>
+                <div class="form-element">
+                    <label for="email">Jūsu e-pasts:</label>
+                    <input type="email" name="email" id="email">
                 </div>
-                <div>
-                    <input type="file" name="image" id="image" accept=".jpg,.png">
-                    <label for="image">Ielādēt profila bildi</label>
+                <div class="form-element">
+                    <label for="message">Jūsu ziņa:</label>
+                    <textarea name="message" id="message"></textarea>
                 </div>
-
-                
-
-                <div>
-                    <select name="month" id="month">
-                        <option value="">-</option>
-                        <optgroup label="Ziema">
-                            <option value="1">Janvāris</option>
-                            <option value="2">Februāris</option>
-                        </optgroup>
-                        <optgroup label="Pavasaris">
-                            <option value="3">Marts</option>
-                            <option value="4">Aprīlis</option>
-                            <option value="5">Maijs</option>
-                        </optgroup>
-                    </select>
-                </div>
-                <div>
-                    <label for="bio">Nedaudz par sevi:</label><br>
-                    <textarea name="bio" id="bio" placeholder="uzraksti par sevi" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit">Saglabāt datus...</button>
+                <button type="submit">Nosūtīt</button>
             </form>
+
 
         </div>
 
         <div class="right_footer">
             <!-- google maps -->
-            <iframe class="googleMaps" rc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17268.796653887825!2d22.567175250278723!3d57.246418933596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ee3823edfac50d%3A0xb6741833a9384d90!2sTalsi%2C%20Talsu%20pils%C4%93ta%2C%20Talsu%20novads%2C%20LV-3201!5e0!3m2!1slv!2slv!4v1743613821616!5m2!1slv!2slv" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe  class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17268.796653887825!2d22.567175250278723!3d57.246418933596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ee3823edfac50d%3A0xb6741833a9384d90!2sTalsi%2C%20Talsu%20pils%C4%93ta%2C%20Talsu%20novads%2C%20LV-3201!5e0!3m2!1slv!2slv!4v1743613821616!5m2!1slv!2slv" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
 </body>
