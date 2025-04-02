@@ -23,10 +23,10 @@ h3 {
 }
 
 p {
-  max-width: 50%;
+  max-width: 60%;
   margin: 20px auto;
-  border: 1px solid orange;
-  border-bottom-width: 5px;
+  /* border: 1px solid orange;
+  border-bottom-width: 5px; */
   padding: 15px;
   text-align: justify;
 }
@@ -138,8 +138,14 @@ footer form button:hover {
   height: 100%;
 }
 
+.picture {
+  width: 60%;
+  border: none;
+}
 
-
+.picture2 {
+  width: 90%;
+}
 .icon {
   width: 30px;
   border: none;
@@ -149,6 +155,7 @@ footer form button:hover {
   border: 1px solid black;
   margin: 20px auto;
   border-collapse:collapse;
+  width: 60%;
 }
 .table tr, .table td {
   border: 1px solid black;
@@ -157,5 +164,23 @@ footer form button:hover {
 
 .table tr:nth-child(2n){
   background-color: rgb(212, 244, 212);
+}
+
+th {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+ul {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.codepen {
+  width: 100%;
+  height: 1000px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: none;
 }
 
