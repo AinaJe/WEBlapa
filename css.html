@@ -16,7 +16,192 @@
     </nav>
     <main>
         <h1>CSS</h1>
-        <p></p>
+        <h2>CSS ieviešana</h2>
+          <p>HTML sākotnēji nebija paredzēts, lai tas saturētu formatēšanas tagus. Tas tika radīts, lai aprakstītu tīmekļa lapu saturu. CSS tika ieviests 1996. gadā un ļauj kontrolēt, kā HTML elementi izskatās uz ekrāna. Izmantojot CSS, varam mainīt krāsas, fontus un izkārtojumu, padarot tīmekļa lapas pievilcīgākas un vieglāk lietojamas. CSS ir attīstījies no 1. versijas līdz mūsdienām, pievienojot jaunas funkcijas un uzlabojumus.</p>
+          <p>Tomēr laika gaitā tīmekļa izstrādātājiem radās problēmas ar stilu formatējumu. Kad HTML3.2 specifikācijai tika pievienoti tādi tagi kā <code>&lt;font&gt;</code> un krāsu atribūti, tas kļuva par īstu izaicinājumu. Lielu tīmekļa vietņu izstrāde prasīja daudz laika un resursu, jo katrai lapai bija jānorāda fonti un krāsas atsevišķi.</p>
+          <p>Lai risinātu šīs problēmas, tika ieviests <abbr title="Cascading Style Sheets">CSS</abbr> (<b>Cascading Style Sheets</b>). CSS ļāva noņemt stila formatējumu no HTML lapām, tādējādi izstrādātājiem bija iespēja atdalīt saturu no dizaina. Tas ievērojami atviegloja tīmekļa lapu izskata maiņu, jo tagad ir iespējams mainīt dizainu, neietekmējot katru lapu atsevišķi. CSS ne tikai uzlaboja tīmekļa vietņu izskatu, bet arī padarīja tās vieglāk uzturamas un efektīvākas.</p>
+          <p><abbr title="Cascading Style Sheets">CSS</abbr> papildina HTML, radot vizuālo noformējumu tīmekļa vietnei, pielāgojot tās izskatu atkarībā no ierīces, kurā vietni atvērs. </p>
+        <img src="https://assets.codepen.io/13326161/html_08.png" alt="" />
+        <img src="https://assets.codepen.io/13326161/html_css+logo.png" style="height:128px; width: 90px;" alt="CSS">
+    <div>
+      <div>
+        <h2>Špikeris “CSS sintakses”</h2>
+        <h3>CSS komentāri</h3>
+        <img src="https://assets.codepen.io/13326161/html_68.png" alt="" />
+        <h3>Iekļautais CSS HTML elementā</h3 </div>
+          <img src="https://assets.codepen.io/13326161/html_69.png" alt="" />
+          <p>Atceries, ka CSS stilus parasti labāk definēt ārējā vai iekšējā stilā.</p>
+          <p><b>CSS sintakse</b>: (<b>Deklarācija</b>: īpašība + vērtība, deklarācijas atdala ar semikolu). Izmantosi, kad vairākiem elementiem būs vienāds noformējums.</p>
+          <img src="https://assets.codepen.io/13326161/html_70.png" alt="" />
+        <p><b>Termini no angļu valodas</b>: <i>selector</i> - atlasītājs, <i>declaration</i> - deklarācija, <i>property</i> - īpašība, <i>value</i> - vērtība, <i>attributes</i> - atribūti.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Špikeris "CSS īpašības"</h2>
+      <div>
+        <table>
+          <tr>
+            <th>Īpašība</th>
+            <th>Apraksts</th>
+            <th>Vērtība</th>
+            <th>Atlasītājs / elements</th>
+          </tr>
+          <tr>
+            <td><code>background-color</code></td>
+            <td>fona krāsa</td>
+            <td rowspan="2"><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
+            <td rowspan="3"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+          </tr>
+          <tr>
+            <td><code>color</code></td>
+            <td>teksta krāsa</td>
+          </tr>
+          <tr>
+            <td><code>text-align</code></td>
+            <td>horizontāls teksta līdzinājums</td>
+            <td><code>center</code><br><code>left</code><br><code>right</code><br><code>justify</code></td>
+          </tr>
+          <tr>
+            <td><code>text-decoration</code></td>
+            <td><b>teksta pasvītrojums</b></td>
+            <td><b>4 &darr;</b> shortcut: <b>line color style thickness</b></td>
+            <td rowspan="5"><code>h1</code>-<code>h6</code>, <code>p</code></td>
+          </tr>
+          <tr>
+            <td><code>text-decoration-line</code></td>
+            <td>pasvītrojuma novietojums</td>
+            <td><code>overline</code><br><code>line-through</code><br><code>underline</code><br><code>overline underline</code><br><code>none</code></td>
+          </tr>
+          <tr>
+            <td><code>text-decoration-color</code></td>
+            <td>pasvītrojuma krāsa</td>
+            <td><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
+          </tr>
+          <tr>
+            <td><code>text–decoration-style</code></td>
+            <td>pasvītrojuma stils</td>
+            <td><code>solid</code><br><code>double</code><br><code>dotted</code><br><code>dashed</code><br><code>wavy</code></td>
+          </tr>
+          <tr>
+            <td><code>text-decoration-thickness</code></td>
+            <td>pasvītrojuma biezums</td>
+            <td><code>...px</code><br><code>...%</code></td>
+          </tr>
+          <tr>
+            <td><code>text-transform</code></td>
+            <td>lielie, mazie burti</td>
+            <td><code>uppercase</code><br><code>lowercase</code><br><code>capitalize</code></td>
+            <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+          </tr>
+          <tr>
+            <td><code>text-indent</code></td>
+            <td>pirmās rindas atkāpe</td>
+            <td><code>...px</code></td>
+            <td><code>p</code></td>
+          </tr>
+          <tr>
+            <td><code>letter-spacing</code></td>
+            <td>atstarpe starp burtiem</td>
+            <td>+<code>...px</code>palielina<br>-<code>...px</code>samazina</td>
+            <td rowspan="3"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+          </tr>
+          <tr>
+            <td><code>line-height</code></td>
+            <td>rindstarpa</td>
+            <td>&lt;<code>1</code>samazina<br>&gt;<code>1</code>palielina</td>
+          </tr>
+          <tr>
+            <td><code>word-spacing</code></td>
+            <td>atstarpe starp vārdiem</td>
+            <td>+<code>...px</code>palielina<br>-<code>...px</code>samazina</td>
+          </tr>
+          <tr>
+            <td><code>text-shadow</code></td>
+            <td>teksta ēna</td>
+            <td>+<code>...px</code> +<code>...px</code> <code>...px</code> color<br> 1.&rarr;, 2.&darr;, 3.pludina, 4. krāsa</td>
+            <td><code><code>h1</code>-<code>h6</code>, <code>p</code></code></td>
+          </tr>
+          <tr>
+            <td><code>font-family</code></td>
+            <td>fonts tekstam</td>
+            <td><code>Arial</code><br><code>‘Times New Roman’</code><br><code>“Times New Roman”</code></td>
+            <td rowspan="4"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+          </tr>
+          <tr>
+            <td><code>font-style</code></td>
+            <td>slīpraksts ar CSS</td>
+            <td><code>normal</code><br><code>oblique</code><br><code>italic</code></td>
+          </tr>
+          <tr>
+            <td><code>font-weight</code></td>
+            <td>treknraksts ar CSS</td>
+            <td><code>bold</code>(<code>700</code>)<br><code>normal</code>(<code>400</code>)<br><code>100</code><br><code>200</code><br>...<br><code>1000</code></td>
+          </tr>
+          <tr>
+            <td><code>font-variant</code></td>
+            <td>mazie burti ar lielo burtu druku</td>
+            <td><code>small-caps</code></td>
+          </tr>
+          <tr>
+            <td colspan="4"><img src="https://assets.codepen.io/13326161/html_21.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td><code>border</code></td>
+            <td><b>apmales noformējums</b></td>
+            <td><b>3 &darr;</b> shortcut: <b>width style color</b></td>
+            <td rowspan="11">visiem elementiem</td>
+          </tr>
+          <tr>
+            <td><code>border-width</code></td>
+            <td>apmales biezums</td>
+            <td><code>...px</code></td>
+          </tr>
+          <tr>
+            <td><code>border-style</code></td>
+            <td>apmales stils</td>
+            <td><code>dotted</code><br><code>dashed</code><br><code>solid</code><br><code>double</code><br><code>groove</code><br><code>ridge</code><br><code>inset</code><br><code>outset</code><br><code>none</code><br></td>
+          </tr>
+          <tr>
+            <td><code>border-color</code></td>
+            <td>apmales krāsa</td>
+            <td><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
+          </tr>
+          <tr>
+            <td><code>border-radius</code></td>
+            <td>apmales stūru noapaļošana</td>
+            <td rowspan="7"><code>...px</code></td>
+          </tr>
+          <tr>
+            <td><code>padding</code></td>
+            <td>polsterējums</td>
+          </tr>
+          <tr>
+            <td><code>margin</code></td>
+            <td>piemale</td>
+          </tr>
+          <tr>
+            <td><code>margin-top</code></td>
+            <td>augšējā piemale</td>
+          </tr>
+          <tr>
+            <td><code>margin-right</code></td>
+            <td>labā piemale</td>
+          </tr>
+          <tr>
+            <td><code>margin-bottom</code></td>
+            <td>apakšējā piemale</td>
+          </tr>
+          <tr>
+            <td><code>margin-left</code></td>
+            <td>kreisā piemale</td>
+          </tr>
+          <tr>
+            <td colspan="4"><b>Tāpat ir arī CSS īpašības (<code>top</code>, <code>right</code> utt.) arī <code>border</code>, <code>padding</code>.</b></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
     </main>
     <footer>
         <div class="left_footer">
@@ -89,7 +274,7 @@
 
         <div class="right_footer">
             <!-- google maps -->
-            <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17268.796653887825!2d22.567175250278723!3d57.246418933596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ee3823edfac50d%3A0xb6741833a9384d90!2sTalsi%2C%20Talsu%20pils%C4%93ta%2C%20Talsu%20novads%2C%20LV-3201!5e0!3m2!1slv!2slv!4v1743603831665!5m2!1slv!2slv" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="googleMaps" rc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17268.796653887825!2d22.567175250278723!3d57.246418933596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ee3823edfac50d%3A0xb6741833a9384d90!2sTalsi%2C%20Talsu%20pils%C4%93ta%2C%20Talsu%20novads%2C%20LV-3201!5e0!3m2!1slv!2slv!4v1743613821616!5m2!1slv!2slv" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
 </body>
