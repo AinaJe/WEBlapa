@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 :root {
   font-size: 14pt;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   line-height:1.5;
   --platums: 70%;
@@ -14,17 +17,29 @@
   --color5: #EBCCB4;
   --color6: #f4B34C;
   --color7: #BF6F31;
+  --gradient1: linear-gradient(var(--color5), var(--color3));
+  --fons_attels:url("images/fons.jpg");
+  --white_background:rgba(255, 255, 255, 0.331);
+  --gaiss_teksts:var(--color4);
+  --tumss_teksts:var(--color2);
 }
 
 /* TEKSTA NOFORMĒŠANA */
 body {
   margin: 0px;
   padding: 0px;
+  background-image: var(--fons_attels);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
 }
 h1, h2, h3 {
   text-align: center;
   margin: 0px;
   margin-bottom: 20px;
+  color: var(--gaiss_teksts);
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 h1 {
   font-size: 3rem;
@@ -42,6 +57,9 @@ p {
   border-bottom-width: 5px; */
   padding: 15px;
   text-align: justify;
+  background:var(--white_background);
+  border-radius: 10px;
+  border-bottom: 2px solid black;
 }
 
 /* ATTĒLU NOFORMĒŠANA */
@@ -57,9 +75,11 @@ img {
 .picture img {
   width: var(--platums2);
   border: none;
+  border-radius: 10px;
 }
 .picture2 { /*Attēls tabulas pilnā platumā*/
   max-width:var(--platums3);
+  border-radius: 10px;
 }
 .icon {
   height: 30px;
@@ -114,9 +134,10 @@ a {
   border: 1px solid var(--color2);
   padding: 5px;
 }
-.table tr:nth-child(2n){
+/* .table tr:nth-child(2n){
   background-color: var(--color4);
-}
+} */
+
 th {
   background-color: var(--color7);
   color: var(--color1);
@@ -126,14 +147,21 @@ th {
 .table2 th, .table2 td {
   width: 15%; /* Fiksēts kolonnu platums */
 }
-.izcelt {
+/* .izcelt {
   background-color: var(--color4);
+} */
+.table tr, .table2 tr {
+  background:var(--white_background);
 }
+
 
 /* SARAKSTU NOFORMĒŠANA */
 .saraksts ul {
   max-width: var(--platums);
   margin: 0 auto;
+  font-family: "Gruppo", sans-serif;
+  background:var(--white_background);
+  border-radius: 10px;
 }
 
 li {
@@ -149,6 +177,8 @@ nav {
   justify-content: center;
   align-items: center; /*flex-start; */
   gap: 20px;
+  position:sticky;
+  top: 0px;
 }
 nav a {
   color: var(--color4);
@@ -232,7 +262,7 @@ footer form button:hover {
 /* IEVIETOTĀ KODA NOFORMĒŠANA */
 code {
   background-color: var(--color6);
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   padding: 0 5px;
 }
 .kods {
@@ -274,11 +304,14 @@ kbd {
 .uzskaitijums {
   width: var(--platums);
   margin: 30px auto;
+  background:var(--white_background);
+  border-radius: 10px;
 }
 
 .uzskaitijums dt {
   font-weight: 900;
   margin:5px;
+  
 }
 
 .uzskaitijums dd {
@@ -286,8 +319,119 @@ kbd {
   font-style: normal; 
 }
 
+.chatWindow{
+  position: fixed;
+  bottom:10px;
+  right: 30px;
+  width: 250px;
+  /* height: 200px; */
+  background-color: #EBCCB4;
+  display: flex;
+  flex-direction: column;
+}
+.chatWindow h5 {
+margin: 0px;
+margin-top: 20px;
+text-align: center;
+}
+
+.chatWindow form {
+  width: 60%;
+  margin: 0px auto;
+}
+.chatWindow input, .chatWindow textarea {
+ width: 100%;
+ resize: none;
+ box-sizing: border-box;
+ border: 2px solid var(--color2);
+ padding: 3px 5px;
+ margin-bottom: 5px;
+}
+
+.chatWindow button {
+ display: block;
+ margin: 10px auto;
+}
+
+.chatWindow .closeButton {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+ }
 
 
+section {
+  border-radius: 10px;
+  background:var(--white_background);
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
 
+@keyframes animacija1 {
+  from{
+color: var(--color4);
+font-size: 1rem;
+transform: rotate(0deg) translate(0px, -100px);
+  }
+  to{
+color: var(--color3);
+font-size: 3rem;
 
+transform: rotate(10deg) translate(0px, 0px);
+  }
+}
 
+@keyframes animacija2 {
+  0%{
+filter: hue-rotate(0deg);
+transform: scale(1);
+border-bottom-width: 3px;
+  }
+  25% {
+    filter: hue-rotate(90deg);
+    transform: scale(1.2);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+    transform: scale(0.8);
+    border-bottom-width: 50px;
+  }
+  75%{
+    filter: hue-rotate(270deg);
+    transform: scale(1.2);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: scale(1);
+    border-bottom-width: 3px;
+  }
+}
+
+.slow-fly-in{
+  animation: animacija1 2s 1 cubic-bezier(.78,1.66,1,0); /*ease-in*/
+}
+
+.animate1{
+  animation: animacija2 2s infinite 0s linear; /*ease-in*/
+  
+}
+.animate2{
+  animation: animacija2 2s infinite 0.5s linear; /*ease-in*/
+  
+}
+.animate3{
+  animation: animacija2 2s infinite 1s linear; /*ease-in*/
+  
+}
+
+.flip-2-hor-top-1{-webkit-animation:flip-2-hor-top-1 .5s cubic-bezier(.755,.05,.855,.06) infinite both;animation:flip-2-hor-top-1 .5s cubic-bezier(.755,.05,.855,.06) infinite both}/*Te var vienkārši pievienot elementu, piemēram, h3*/
+
+/* ----------------------------------------------
+ * Generated by Animista on 2025-4-3 21:16:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @-webkit-keyframes flip-2-hor-top-1{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}@keyframes flip-2-hor-top-1{0%{-webkit-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);-webkit-transform-origin:50% 0;transform-origin:50% 0}100%{-webkit-transform:translateY(-100%) rotateX(-180deg);transform:translateY(-100%) rotateX(-180deg);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}

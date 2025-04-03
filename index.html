@@ -17,30 +17,31 @@
 
 <body>
     <nav>
-        <a href="index.html" class="active">Galvenā</a>
-        <a href="html.html">HTML</a>
-        <a href="css.html">CSS</a>
-        <a href="js.html">Javascript</a>
+        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Galvenā</a>
+        <a href="html.html"><i class="fa-solid fa-code"></i> HTML</a>
+        <a href="css.html"><i class="fa-brands fa-css"></i> CSS</a>
+        <a href="js.html"><i class="fa-brands fa-js"></i> Javascript</a>
     </nav>
 
     <main>
+        <h1 class="slow-fly-in">Esi sveicināts!!!</h1>
         <section id="html">
-            <h3>Kas ir HTML?</h3>
-            <p><strong>HTML </strong>(<i>Hypertext Markup Language</i>) ir marķēšanas valoda, kas tiek izmantota tīmekļa lapu struktūras izveidei. Tā izmanto elementus un tagus, lai aprakstītu dažādas satura daļas, piemēram, virsrakstus, rindkopas, attēlus un
+            <h3 class="flip-2-hor-top-1">Kas ir HTML?</h3>
+            <p class="animate1"><strong>HTML </strong>(<i>Hypertext Markup Language</i>) ir marķēšanas valoda, kas tiek izmantota tīmekļa lapu struktūras izveidei. Tā izmanto elementus un tagus, lai aprakstītu dažādas satura daļas, piemēram, virsrakstus, rindkopas, attēlus un
                 saites.</p>
             <img class="logoLanguage" src="images/html.png" alt="" />
         </section>
 
         <section id="css">
             <h3>Kas ir CSS?</h3>
-            <p><strong>CSS</strong> (<i>Cascading Style Sheets</i>) ir stilu lapa, kas tiek izmantota, lai noformētu HTML dokumentus. Tā nosaka izkārtojumu, krāsas, fontus un citus dizaina elementus, padarot tīmekļa lapas pievilcīgākas un pielāgotas lietotāja
+            <p  class="animate2"><strong>CSS</strong> (<i>Cascading Style Sheets</i>) ir stilu lapa, kas tiek izmantota, lai noformētu HTML dokumentus. Tā nosaka izkārtojumu, krāsas, fontus un citus dizaina elementus, padarot tīmekļa lapas pievilcīgākas un pielāgotas lietotāja
                 vajadzībām.</p>
             <img class="logoLanguage" src="https://assets.codepen.io/13326161/html_css+logo.png" alt="CSS">
         </section>
 
         <section id="javascript">
             <h3>Kas ir JavaScript?</h3>
-            <p><strong>JavaScript</strong> ir programmēšanas valoda, kas tiek izmantota tīmekļa vietņu interaktivitātes pievienošanai. Tā ļauj izveidot dinamisku saturu, animācijas, formu validāciju un daudz ko citu, padarot lapas interaktīvas un lietotājam
+            <p  class="animate3"><strong>JavaScript</strong> ir programmēšanas valoda, kas tiek izmantota tīmekļa vietņu interaktivitātes pievienošanai. Tā ļauj izveidot dinamisku saturu, animācijas, formu validāciju un daudz ko citu, padarot lapas interaktīvas un lietotājam
                 draudzīgas.</p>
             <img class="logoLanguage" src="images/js.png" alt="JS" />
         </section>
@@ -94,12 +95,17 @@
                     <dt>HTML</dt>
                     <dd>&check; <a class="avots" href="https://www.webatic.com/html-entities-convertor">Konvertors entītijām</a></dd>
                     <dd>&check; <a class="avots" href="https://www.toptal.com/designers/htmlarrows/#">Entītijas</a></dd>
+                    <dd>&check; <a class="avots" href="https://fontawesome.com/start">Ikonas1</a></dd>
+                    <dd>&check; <a class="avots" href="https://www.rapidtables.com/web/html/html-codes.html">Ikonas2</a></dd>
                     <dd>&check; <a class="avots" href="https://placehold.co/">Vietturi</a></dd>
                     <dt>CSS</dt>
                     <dd>&check; <a class="avots" href="https://cssreference.io/">CSS kodu fragmenti</a></dd>
                     <dd>&check; <a class="avots" href="https://github.com/kevquirk/simple.css/wiki/Getting-Started-With-Simple.css">Vienkāršais CSS ietvars</a></dd>
                     <dd>&check; <a class="avots" href="https://fonts.google.com/">Google fonti</a></dd>
                     <dt>JavaScript</dt>
+                    <dd>&check; <a class="avots" href="https://cdnjs.com/libraries">JS bibliotēkas saites</a></dd>
+                    <dd>&check; <a class="avots" href="https://cubic-bezier.com/#.17,.67,.83,.67">Animācijas līkne</a></dd>
+                    
                 </dl>
             </div>
         </section>
@@ -146,6 +152,19 @@
         </div>
     </footer>
 
+    <!-- Chat window -->
+    <div class="chatWindow">
+        <button class="closeButton"><i class="fa-solid fa-xmark"></i></button>
+        <h5>Uzdot jautājumu &#x1F4BE;</h5>
+        <form action="" id="chatform">
+            <input type="text" name="" id="" placeholder="Jūsu vārds">
+            <input type="email" name="" id="" placeholder="E-pasts">
+            <textarea name="" id="" placeholder="Uzdodiet savu jautājumu!"></textarea>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Nosūtīt jautājumu</button>
+        </form>
+    </div>
+
+    <!-- Chat Window -->
 </body>
 
 </html>
