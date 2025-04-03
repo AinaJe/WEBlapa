@@ -271,6 +271,23 @@ kbd {
   padding: 0 5px;
 }
 
+.uzskaitijums {
+  width: var(--platums);
+  margin: 30px auto;
+}
+
+.uzskaitijums dt {
+  font-weight: 900;
+  margin:5px;
+}
+
+.uzskaitijums dd {
+  font-weight: 100;
+  font-style: normal; 
+}
+
+
+
 
 
 
