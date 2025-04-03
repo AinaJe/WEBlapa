@@ -36,13 +36,70 @@
         <h2>Špikeris “CSS sintakses”</h2>
         <section  id="CSSsintakses">
             <h3>CSS komentāri</h3>
-            <img class="picture" src="https://assets.codepen.io/13326161/html_68.png" alt="" />
+            <div class="kods">
+                <pre data-language="css">
+                    <code class="language-css">
+    /* Šis ir komentārs */                    
+                    </code>
+                </pre>
+            </div>
+            <div class="kods">
+                <pre data-language="css">
+                    <code class="language-css">
+    /* 
+    Šis ir komentārs
+    vairākās rindās
+    */                    
+                    </code>
+                </pre>
+            </div>
             <h3>Iekļautais CSS HTML elementā</h3>
-            <img class="picture" src="https://assets.codepen.io/13326161/html_69.png" alt="" />
+            <p>Ar HTML atribūtu <code>style</code>, kurš satur CSS īpašības un to vērtības.</p>
+            <div class="kods">
+                <pre data-language="html">
+                    <code class="language-html">
+    &lt;tags style=&quot;īpašība: vērtība; īpašība: vērtība;&quot;&gt;
+                    </code>
+                </pre>
+            </div>
             <p>Atceries, ka CSS stilus parasti labāk definēt ārējā vai iekšējā stilā.</p>
-            <p><b>CSS sintakse</b>: (<b>Deklarācija</b>: īpašība + vērtība, deklarācijas atdala ar semikolu). Izmantosi, kad vairākiem elementiem būs vienāds noformējums.</p>
-            <img class="picture" src="https://assets.codepen.io/13326161/html_70.png" alt="" />
-            <p><b>Termini no angļu valodas</b>: <i>selector</i> - atlasītājs, <i>declaration</i> - deklarācija, <i>property</i> - īpašība, <i>value</i> - vērtība, <i>attributes</i> - atribūti.</p>
+            <h3>CSS sintakses</h3>
+            <p>Vairākās rindās. Vienkāršie atlasītāji ir taga nosaukums, ID vai klases nosaukums.</p>
+            <div class="kods">
+                <pre data-language="css">
+                    <code class="language-css">
+    atlasitajs, atlasitajs {
+        ipasiba: vertiba;
+        ipasiba: vertiba;
+    }
+                    </code>
+                </pre>
+            </div>
+            <p>Vienā rindā, bieži izmanto, ja ir viena īpašība.</p>
+            <div class="kods">
+                <pre data-language="css">
+                    <code class="language-css">
+    atlasitajs, atlasitajs {ipasiba: vertiba; ipasiba: vertiba;}                
+                    </code>
+                </pre>
+            </div>
+            <p>Vienai īpašībai - vairākas vērtības.</p>
+            <div class="kods">
+                <pre data-language="css">
+                    <code class="language-css">
+    atlasitajs, atlasitajs {ipasiba: vertiba vertiba vertiba; ipasiba: vertiba;} 
+                    </code>
+                </pre>
+            </div>
+            <p><b>Termini no angļu valodas</b>: </p>
+                <ul>
+                    <li><i>selector</i> - atlasītājs,</li>
+                    <li><i>declaration</i> - deklarācija,</li>
+                    <li><i>property</i> - īpašība, </li>
+                    <li><i>value</i> - vērtība,</li>
+                    <li><i>attributes</i> - atribūti.</li>
+                </ul>
+             
         </section >
 
         <h2>Špikeris "CSS īpašības"</h2>
