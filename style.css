@@ -3,6 +3,10 @@
   font-family: sans-serif;
   box-sizing: border-box;
   line-height:1.5;
+  --platums: 70%;
+  --platums2: 35%;
+  --platums3: 50rem;
+  --platums4: 100%;
   --color1: white;
   --color2: #2B1E1A;
   --color3: #861D1D;
@@ -32,7 +36,7 @@ h3 {
   font-size: 1.5rem;
 }
 p {
-  max-width: 60%;
+  max-width: var(--platums);
   margin: 20px auto;
   /* border: 1px solid orange;
   border-bottom-width: 5px; */
@@ -51,11 +55,11 @@ img {
   /* border-bottom-width: 4px; */
 }
 .picture img {
-  width: 35%;
+  width: var(--platums2);
   border: none;
 }
 .picture2 { /*Attēls tabulas pilnā platumā*/
-  max-width:1000px;
+  max-width:var(--platums3);
 }
 .icon {
   height: 30px;
@@ -72,18 +76,18 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  width: 100%; /* Nodrošina, ka section aizņem visu platumu */
+  width: var(--platums4); /* Nodrošina, ka section aizņem visu platumu */
 }
 .iframe-container {
-  width: 100%;
-  max-width: 978px; /* Ierobežo iframe konteinera maksimālo platumu */
+  width: var(--platums4);
+  max-width: var(--platums3); /* Ierobežo iframe konteinera maksimālo platumu */
   height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .codepen {
-  width: 100%;
+  width: var(--platums4);
   height: 100%;
   border: none;
   border-radius: 10px;
@@ -104,7 +108,7 @@ a {
   border: 1px solid var(--color2);
   margin: 20px auto;
   border-collapse:collapse;
-  width: 60%;
+  width: var(--platums);
 }
 .table tr, .table td, .table2 tr, .table2 td, .table2 th {
   border: 1px solid var(--color2);
@@ -114,7 +118,7 @@ a {
   background-color: var(--color4);
 }
 th {
-  background-color: var(--color3);
+  background-color: var(--color7);
   color: var(--color1);
   border: 1px solid var(--color2);
   padding: 5px;
@@ -127,10 +131,11 @@ th {
 }
 
 /* SARAKSTU NOFORMĒŠANA */
-ul {
-  width: 50%;
-  margin: 5px auto;
+.saraksts ul {
+  max-width: var(--platums);
+  margin: 0 auto;
 }
+
 li {
   padding: 5px 0;
   text-align: justify;
@@ -178,7 +183,7 @@ footer {
   font-weight: 100;
 }
 footer form, address {
-width: 70%;
+width: var(--platums);
 }
 .left_footer address h3, .left_footer dt {
 font-style: normal;
@@ -189,7 +194,7 @@ footer form label {
 }
 footer form input, footer form textarea {
   box-sizing: border-box; /*Lai padding nepalielina elementa platumu*/
-  width:100%;
+  width:var(--platums4);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -204,7 +209,7 @@ footer form textarea {
   resize: none; /*neļauj mainīt izmēru*/
 }
 footer form button {
-  width: 100%;
+  width: var(--platums4);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -220,19 +225,18 @@ footer form button:hover {
   transition: .5s linear;
 }
 .googleMaps{
-  width: 100%;
+  width: var(--platums4);
   border-radius: 10px;
   height: 100%;
 }
 /* IEVIETOTĀ KODA NOFORMĒŠANA */
 code {
   background-color: var(--color6);
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   padding: 0 5px;
 }
-
 .kods {
-  width: 60%;
+  width: var(--platums);
   margin: 30px auto;
 }
 .kods pre {
@@ -252,7 +256,7 @@ pre::before {
   text-transform: uppercase;
   padding: 8px 12px;
   display: block;
-  width: 100%;
+  width: var(--platums4);
 }
 pre code {
   padding: 12px;
