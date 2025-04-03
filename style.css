@@ -2,6 +2,7 @@
   font-size: 14pt;
   font-family: sans-serif;
   box-sizing: border-box;
+  line-height:1.5;
   --color1: white;
   --color2: #2B1E1A;
   --color3: #861D1D;
@@ -224,11 +225,17 @@ footer form button:hover {
   height: 100%;
 }
 /* IEVIETOTĀ KODA NOFORMĒŠANA */
+code {
+  background-color: var(--color6);
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
 .kods {
   width: 60%;
   margin: 30px auto;
 }
-pre {
+.kods pre {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -237,21 +244,21 @@ pre {
   font-size: 16px;
 }
 pre::before {
-      content: attr(data-language);
-      background-color: var(--color7);
-      color: var(--color1);
-      font-size: 14px;
-      font-family: Arial, sans-serif;
-      text-transform: uppercase;
-      padding: 8px 12px;
-      display: block;
-      width: 100%;
+  content: attr(data-language);
+  background-color: var(--color7);
+  color: var(--color1);
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  display: block;
+  width: 100%;
 }
 pre code {
-      padding: 12px;
-      display: block;
-      overflow-x: auto;
-      font-size: 1.2rem;
+  padding: 12px;
+  display: block;
+  overflow-x: auto;
+  font-size: 1.2rem;
 }
 
 
