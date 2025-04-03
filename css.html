@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <!-- HIGHLIGHT.JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <title>HTML</title>
 </head>
 
@@ -51,154 +54,175 @@
                     <th>Vērtība</th>
                     <th>Atlasītājs / elements</th>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>background-color</code></td>
                     <td>fona krāsa</td>
                     <td rowspan="2"><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
-                    <td rowspan="3"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>color</code></td>
                     <td>teksta krāsa</td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>text-align</code></td>
                     <td>horizontāls teksta līdzinājums</td>
                     <td><code>center</code><br><code>left</code><br><code>right</code><br><code>justify</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>text-decoration</code></td>
                     <td><b>teksta pasvītrojums</b></td>
                     <td><b>4 &darr;</b> shortcut: <b>line color style thickness</b></td>
-                    <td rowspan="5"><code>h1</code>-<code>h6</code>, <code>p</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code></td>
                 </tr>
                 <tr>
                     <td><code>text-decoration-line</code></td>
                     <td>pasvītrojuma novietojums</td>
                     <td><code>overline</code><br><code>line-through</code><br><code>underline</code><br><code>overline underline</code><br><code>none</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code></td>
                 </tr>
                 <tr>
                     <td><code>text-decoration-color</code></td>
                     <td>pasvītrojuma krāsa</td>
                     <td><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code></td>
                 </tr>
                 <tr>
                     <td><code>text–decoration-style</code></td>
                     <td>pasvītrojuma stils</td>
                     <td><code>solid</code><br><code>double</code><br><code>dotted</code><br><code>dashed</code><br><code>wavy</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code></td>
                 </tr>
                 <tr>
                     <td><code>text-decoration-thickness</code></td>
                     <td>pasvītrojuma biezums</td>
                     <td><code>...px</code><br><code>...%</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>text-transform</code></td>
                     <td>lielie, mazie burti</td>
                     <td><code>uppercase</code><br><code>lowercase</code><br><code>capitalize</code></td>
                     <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>text-indent</code></td>
                     <td>pirmās rindas atkāpe</td>
                     <td><code>...px</code></td>
                     <td><code>p</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>letter-spacing</code></td>
                     <td>atstarpe starp burtiem</td>
                     <td>+<code>...px</code>palielina<br>-<code>...px</code>samazina</td>
-                    <td rowspan="3"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>line-height</code></td>
                     <td>rindstarpa</td>
                     <td>&lt;<code>1</code>samazina<br>&gt;<code>1</code>palielina</td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>word-spacing</code></td>
                     <td>atstarpe starp vārdiem</td>
                     <td>+<code>...px</code>palielina<br>-<code>...px</code>samazina</td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>text-shadow</code></td>
                     <td>teksta ēna</td>
                     <td>+<code>...px</code> +<code>...px</code> <code>...px</code> color<br> 1.&rarr;, 2.&darr;, 3.pludina, 4. krāsa</td>
                     <td><code><code>h1</code>-<code>h6</code>, <code>p</code></code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>font-family</code></td>
                     <td>fonts tekstam</td>
                     <td><code>Arial</code><br><code>‘Times New Roman’</code><br><code>“Times New Roman”</code></td>
-                    <td rowspan="4"><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>font-style</code></td>
                     <td>slīpraksts ar CSS</td>
                     <td><code>normal</code><br><code>oblique</code><br><code>italic</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>font-weight</code></td>
                     <td>treknraksts ar CSS</td>
                     <td><code>bold</code>(<code>700</code>)<br><code>normal</code>(<code>400</code>)<br><code>100</code><br><code>200</code><br>...<br><code>1000</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>font-variant</code></td>
                     <td>mazie burti ar lielo burtu druku</td>
                     <td><code>small-caps</code></td>
+                    <td><code>h1</code>-<code>h6</code>, <code>p</code>, <code>body</code></td>
                 </tr>
                 <tr>
                     <td colspan="4"><img class="picture2" src="https://assets.codepen.io/13326161/html_21.png" alt="" /></td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>border</code></td>
                     <td><b>apmales noformējums</b></td>
                     <td><b>3 &darr;</b> shortcut: <b>width style color</b></td>
-                    <td rowspan="11">visiem elementiem</td>
+                    <td>visiem elementiem</td>
                 </tr>
                 <tr>
                     <td><code>border-width</code></td>
                     <td>apmales biezums</td>
                     <td><code>...px</code></td>
+                    <td>visiem elementiem</td>
                 </tr>
                 <tr>
                     <td><code>border-style</code></td>
                     <td>apmales stils</td>
                     <td><code>dotted</code><br><code>dashed</code><br><code>solid</code><br><code>double</code><br><code>groove</code><br><code>ridge</code><br><code>inset</code><br><code>outset</code><br><code>none</code><br></td>
+                    <td>visiem elementiem</td>
                 </tr>
                 <tr>
                     <td><code>border-color</code></td>
                     <td>apmales krāsa</td>
                     <td><code>white</code><br><code>rgb(255, 255, 255)</code><br><code>rgba(255, 255, 255, 1)</code><br> <code>#ffffff</code><br><code>hsl(0, 100%, 100%)</code><br><code>hsla(0, 100%, 100%, 1)</code></td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>border-radius</code></td>
                     <td>apmales stūru noapaļošana</td>
                     <td rowspan="7"><code>...px</code></td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>padding</code></td>
                     <td>polsterējums</td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>margin</code></td>
                     <td>piemale</td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>margin-top</code></td>
                     <td>augšējā piemale</td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>margin-right</code></td>
                     <td>labā piemale</td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>margin-bottom</code></td>
                     <td>apakšējā piemale</td>
+                    <td>visiem elementiem</td>
                 </tr>
-                <tr>
+                <tr class="izcelt">
                     <td><code>margin-left</code></td>
                     <td>kreisā piemale</td>
+                    <td>visiem elementiem</td>
                 </tr>
                 <tr>
                     <td colspan="4"><b>Tāpat ir arī CSS īpašības (<code>top</code>, <code>right</code> utt.) arī <code>border</code>, <code>padding</code>.</b></td>

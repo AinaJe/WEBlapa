@@ -3,10 +3,12 @@
   font-family: sans-serif;
   box-sizing: border-box;
   --color1: white;
-  --color2: black;
-  --color3: red;
-  --color4: lightGray;
-  --color5: green;
+  --color2: #2B1E1A;
+  --color3: #861D1D;
+  --color4: #E8E2D1;
+  --color5: #EBCCB4;
+  --color6: #f4B34C;
+  --color7: #BF6F31;
 }
 
 /* TEKSTA NOFORMĒŠANA */
@@ -17,6 +19,7 @@ body {
 h1, h2, h3 {
   text-align: center;
   margin: 0px;
+  margin-bottom: 20px;
 }
 h1 {
   font-size: 3rem;
@@ -26,7 +29,6 @@ h2 {
 }
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 p {
   max-width: 60%;
@@ -51,11 +53,11 @@ img {
   width: 35%;
   border: none;
 }
-.picture2 {
+.picture2 { /*Attēls tabulas pilnā platumā*/
   max-width:1000px;
 }
-.icon img {
-  width: 30px;
+.icon {
+  height: 30px;
   border: none;
 }
 .logoLanguage {
@@ -68,7 +70,7 @@ img {
 #JavaScriptIevads {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   width: 100%; /* Nodrošina, ka section aizņem visu platumu */
 }
 .iframe-container {
@@ -119,11 +121,18 @@ th {
 .table2 th, .table2 td {
   width: 15%; /* Fiksēts kolonnu platums */
 }
+.izcelt {
+  background-color: var(--color4);
+}
 
 /* SARAKSTU NOFORMĒŠANA */
 ul {
   width: 50%;
-  margin: 20px auto;
+  margin: 5px auto;
+}
+li {
+  padding: 5px 0;
+  text-align: justify;
 }
 
 /* GALVENĀS IZVĒLNES NOFORMĒŠANA */
@@ -144,7 +153,7 @@ nav a:not(.active):hover {
   transition: all 0.5s linear;
 }
 a.active {
-  color: var(--color3);
+  color: var(--colors6);
   transition: all 0.5s linear; /*Šobrīd šeit nav nozīmes*/
 }
 
@@ -214,8 +223,36 @@ footer form button:hover {
   border-radius: 10px;
   height: 100%;
 }
-
-
+/* IEVIETOTĀ KODA NOFORMĒŠANA */
+.kods {
+  width: 60%;
+  margin: 30px auto;
+}
+pre {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+pre::before {
+      content: attr(data-language);
+      background-color: var(--color7);
+      color: var(--color1);
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      display: block;
+      width: 100%;
+}
+pre code {
+      padding: 12px;
+      display: block;
+      overflow-x: auto;
+      font-size: 1.5rem;
+}
 
 
 
